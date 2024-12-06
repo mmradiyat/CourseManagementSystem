@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace Database.Model
 {
-    public class Attendence
+    public class Result
     {
-        [Key] public string? AttendenceId { get; set; }
-        [Required] public string? SectionWiseCourseId { get; set; }
-        public bool IsPresent { get; set; }
+        [Key] public string? ResultId { get; set; }
+
     }
 }
