@@ -9,7 +9,7 @@ namespace Database.Model
 {
     public class Department
     {
-        [Key] public int DepartmentId { get; set; }
+        [Key] public string? DepartmentId { get; set; }
         [Required] public string? DepartmentName { get; set; }
     }
 }
