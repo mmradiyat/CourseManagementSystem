@@ -11,6 +11,8 @@ namespace Database.Model
     {
         [Key] public string? AttendenceId { get; set; }
         [Required] public string? SectionWiseCourseId { get; set; }
+        [Required] public string? SectionId { get; set; }
+        [Required] public DateOnly IssueDate { get; set; }
         public bool IsPresent { get; set; }
     }
 }
