@@ -14,5 +14,6 @@ namespace Database.Model
         [Required] public string? UserEmail { get; set;}
         [Required] public string? UserPhone { get; set;} 
         [Required] public string? UserPasswordHash { get; set; }
+        public bool IsUserActive { get; set; }
     }
 }
