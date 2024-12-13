@@ -10,6 +10,9 @@ namespace Database.Model
     public class Result
     {
         [Key] public string? ResultId { get; set; }
+        [Required] public int StudenId { get; set; }
+        [Required] public int SemesterId { get; set; }
+        [Required] public decimal SGPA { get; set; }
 
     }
 }

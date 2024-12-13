@@ -12,9 +12,9 @@ namespace Database.Model
         [Key] public string? InstructorId { get; set; }
         [Required] public string? InstructorName { get; set; }
         [Required] public string? InstructorEmail { get; set; }
-        [Required] public int InstructorPhoneNumber { get; set; }
-        [Required] public string? Department { get; set; }
+        [Required] public int PhoneNumber { get; set; }
         [Required] public bool IsInstructorAvailable { get; set; }
+        [Required] public string? DepartmentId { get; set; }
         [Required] public string? UserId { get; set; }
         [Required] public string? CourseId { get; set; }
     }

@@ -11,7 +11,7 @@ namespace Database.Model
     {
         [Key] public string? CourseId { get; set; }
         [Required] public string? CourseName { get; set; }
-        [Required] public int CourseCreditHour { get; set; }
+        [Required] public int CreditHour { get; set; }
         [Required] public string? CourseDuration { get; set; }
         [Required] public string? DepartmentId { get; set; }
     }
