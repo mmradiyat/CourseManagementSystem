@@ -12,7 +12,7 @@ namespace Database.Model
         [Key, MaxLength(20)] public string? InstructorId { get; set; } //Instructor01,Instructor0123
         [Required, MaxLength(40)] public string? InstructorName { get; set; }
         [Required, MaxLength(255)] public string? InstructorEmail { get; set; }
-        [Required, MaxLength(14)] public int PhoneNumber { get; set; }
+        [Required, MaxLength(14)] public int PhoneNumber { get; set; } //+8801812703580
         [Required] public bool IsInstructorAvailable { get; set; }
         [Required] public string? DepartmentId { get; set; }
         [Required] public string? CourseId { get; set; }
