@@ -9,7 +9,7 @@ namespace Database.Model
 {
     public class Result
     {
-        [Key] public string? ResultId { get; set; }
+        [Key, MaxLength(128)] public string? ResultId { get; set; } = Guid.NewGuid().ToString();
         [Required] public int StudenId { get; set; }
         [Required] public int SemesterId { get; set; }
         [Required] public decimal SGPA { get; set; }

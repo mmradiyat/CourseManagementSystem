@@ -9,7 +9,7 @@ namespace Database.Model
 {
     public class Department
     {
-        [Key] public string? DepartmentId { get; set; }
-        [Required] public string? DepartmentName { get; set; }
+        [Key, MaxLength(5)] public string? DepartmentId { get; set; } //DM1, DM2
+        [Required, MaxLength(50)] public string? DepartmentName { get; set; }
     }
 }

@@ -11,6 +11,7 @@ namespace Database.Model
     {
         [Key] public int SemesterId { get; set; }
         [Required] public string? SemesterName { get; set; }
+        [Required] public string? SemesterNo { get; set; }
         [Required] public DateOnly StartDate { get; set; }
         [Required] public DateOnly EndDate { get; set; }
     }

@@ -9,7 +9,7 @@ namespace Database.Model
 {
     public class Attendence
     {
-        [Key] public string? AttendenceId { get; set; }
+        [Key, MaxLength(128)] public string? AttendenceId { get; set; } = Guid.NewGuid().ToString();
         [Required] public string? SectionWiseCourseId { get; set; }
         [Required] public DateOnly IssueDate { get; set; }
         public bool IsPresent { get; set; }

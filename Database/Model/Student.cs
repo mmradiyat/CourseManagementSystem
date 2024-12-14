@@ -10,13 +10,13 @@ namespace Database.Model
     public class Student : BaseClass
     {
         [Key] public int StudenId { get; set; }
-        [Required] public string? StudentName { get; set; }
-        [Required] public int PhoneNumber { get; set; }
-        [Required] public string? StudentEmail { get; set; }
-        [Required] public string? Gender { get; set; }
+        [Required, MaxLength(40)] public string? StudentName { get; set; }
+        [Required, MaxLength(14)] public string? PhoneNumber { get; set; } //+01xxxxxxxxxxx
+        [Required, MaxLength(255)] public string? StudentEmail { get; set; }
+        [Required, MaxLength(15)] public string? Gender { get; set; } //Male/Female/Common
         [Required] public DateTime DateOfBirth{ get; set; }
-        [Required] public string? Semester { get; set; }
-        [Required] public string? Department { get; set; }
+        [Required] public string? SemesterId { get; set; }
+        [Required] public string? DepartmentId { get; set; }
         [Required] public bool IsContinue { get; set; }
         [Required] public string? UserId { get; set; }
     }

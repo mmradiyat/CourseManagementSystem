@@ -9,9 +9,9 @@ namespace Database.Model
 {
     public class Schedule
     {
-        [Key] public string? ScheduleId { get; set; }
+        [Key, MaxLength(20)] public string? ScheduleId { get; set; } //Schedule01,Schedule012
         [Required] public string? SectionWiseCourseId { get; set;}
-        [Required] public string? Day { get; set; }
-        [Required] public string? Room { get; set; }
+        [Required] public string? Day { get; set; } //Monday,Tuesday
+        [Required] public int RoomNumber { get; set; } //102,202,402
     }
 }

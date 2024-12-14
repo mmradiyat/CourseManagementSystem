@@ -9,7 +9,7 @@ namespace Database.Model
 {
     public class Section
     {
-        [Key] public string? SectionId { get; set; }
-        [Required] public string? SectionName { get; set; }
+        [Key, MaxLength(10)] public string? SectionId { get; set; } //Section1,Section2,Section3
+        [Required, MaxLength(5)] public string? SectionName { get; set; } //A,A1,DayA,DayA1
     }
 }
