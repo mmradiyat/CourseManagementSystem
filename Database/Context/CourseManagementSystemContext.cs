@@ -9,15 +9,20 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Database.Context
 {
-    public class DefaultContext : DbContext
+    public class CourseManagementSystemContext : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(
-                @"Server=.;Database=CourseManagementSystem;Trusted_Connection=True;ConnectRetryCount=0");
+            optionsBuilder.UseSqlServer(@"Server=DESKTOP-OV3RDQP\MSSQLSERVER01;Database=CourseManagementSystem;Trusted_Connection=True;ConnectRetryCount=0");
         }
         public DbSet<User> User { get; set; }
+        public DbSet<Instructor> Instructor { get; set; }
         public DbSet<Department> Department { get; set; }
+        public DbSet<Course> Course { get; set; }
+        public DbSet<Section> Section { get; set; }
+        public DbSet<Semester> Semester { get; set; }
+
+
 
     }
 }
