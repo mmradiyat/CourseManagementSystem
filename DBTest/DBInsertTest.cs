@@ -1,23 +1,13 @@
 ﻿using Database.Context;
 using Database.Model;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
-using System.Data;
 
 namespace DBTest
 {
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            var db = new CourseManagementSystemContext();
-
-            User MyUser = db.User.Where(x => x.UserId == "1bbedaea3").FirstOrDefault();
-            db.SaveChanges();
-        }
-    }
-
     class DBInsertTest
     {
+        private EntityEntry<User> User;
+
         public DBInsertTest()
         {
             var db = new CourseManagementSystemContext();
@@ -53,11 +43,10 @@ namespace DBTest
                     RoleId = 3
                 });
             }
-            db.SaveChanges(); */
-
+            db.SaveChanges();
             Console.WriteLine(DateTime.Now);
         }
-    } 
+    } */
 
     /*
     class DBReadTest
