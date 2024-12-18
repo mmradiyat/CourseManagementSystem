@@ -9,8 +9,8 @@ namespace Database.Model
 {
     public class SectionWiseStudent
     {
-        [Key] public string? SectionWiseStudentId { get; set; }
+        [Key, MaxLength(10)] public string? SectionWiseStudentId { get; set; }//SWSID01,SWSTD02
         [Required] public string? SectionWiseCourseId { get; set; }
-        [Required] public string? StudenId { get; set; }
+        [Required] public int StudenId { get; set; }
     }
 }

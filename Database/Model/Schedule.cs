@@ -10,8 +10,8 @@ namespace Database.Model
     public class Schedule
     {
         [Key, MaxLength(20)] public string? ScheduleId { get; set; } //Schedule01,Schedule012
-        [Required] public string? SectionWiseCourseId { get; set;}
-        [Required] public string? Day { get; set; } //Monday,Tuesday
+        [Required, MaxLength(10)] public string? SectionWiseCourseId { get; set;}
+        [Required, MaxLength(10)] public string? Day { get; set; } //Monday,Tuesday,Wednesday
         [Required] public int RoomNumber { get; set; } //102,202,402
     }
 }

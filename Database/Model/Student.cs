@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace Database.Model
 {
-    public class Student : BaseClass
+    public class Student
     {
         [Key] public int StudenId { get; set; }
         [Required, MaxLength(40)] public string? StudentName { get; set; }
         [Required, MaxLength(15)] public string? PhoneNumber { get; set; } //+8801812703580
         [Required, MaxLength(255)] public string? StudentEmail { get; set; }
-        [Required, MaxLength(15)] public string? Gender { get; set; } //Male/Female/Common
+        [Required, MaxLength(20)] public string? Gender { get; set; } //Male/Female/Common
         [Required] public DateTime DateOfBirth{ get; set; }
         [Required] public string? SemesterId { get; set; }
         [Required] public string? DepartmentId { get; set; }
